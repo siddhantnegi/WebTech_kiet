@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    height: 300px;
+    color: blue;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+}
+@media (max-width: 800px){
+    .flex-container{
+        flex-direction: column;
+        
+    }
+}

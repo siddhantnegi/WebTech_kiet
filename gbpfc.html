@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB Pant</title>
+    <style>
+        ul {
+            margin: 0%;
+            padding: 0%;
+            
+            height: 100%;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .nav{
+            height: 40px;
+            width: 100vw;
+            background-color: green;
+        }
+        li a {
+            display: block;
+            width: 60px;
+            border-bottom: lightslategray;
+            border-width: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: yellow;
+        }
+
+        li a:hover {
+            /* background-color: rgb(8, 113, 8); */
+            color: white;
+        }
+
+        .active {
+            /* background-color: #04AA6D; */
+            color: white;
+        }
+
+        .all-clubs {
+            margin: 0%;
+            padding: 8px;
+            background-color: aquamarine;
+        }
+
+        .all-clubs>h2,
+        .club {
+            margin: 14px;
+            padding: 5px;
+        }
+
+        .all-clubs>h1 {
+            margin: 4px;
+            font-size: 200%;
+        }
+
+        .club>p {
+            background-color: aliceblue;
+        }
+
+        .club>h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+    <ul>
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="home.html">News</a></li>
+        <li class="active"><a href="home.html">Contact</a></li>
+        <li class="active"><a href="home.html">About</a></li>
+    </ul>
+    
+</header>
+    <section>
+        <h1>GB PANT FOOTBALL CLUB, <h3>MORADABAD</h3>
+        </h1>
+        
+        <p>Established in 1980, no. 1 club of Moradabad, pursue the excellence of livelihood and disciple. President of
+            GBPFC is <mark>Adv Atul Mathur</mark> ,Vice-President of GBPFC is <mark>Rajesh khanna</mark> and coach of
+            GBPFC is <mark>Narayan Singh Negi</mark>.</p>
+    </section>
+    <form target="_blank">
+        <nav>
+            <a href="form.html">HTML</a><br>
+            <a href="para.html">PARAGRAPH</a>
+        </nav>
+
+    </form>
+
+    <article class="all-clubs">
+        <h1>Achievments Of GBPFC</h1>
+
+        <article class="club">
+            <h2>Pradarshani Tournament 2023</h2>
+            <p>Such a mesmerising tournament in which 10 teams have participated and we secure <b>Runner Up</b> ,and the
+                winner team is Hartala club.</p>
+        </article>
+
+        <article class="club">
+            <h2>District Tournament</h2>
+            <p>We are the <b>WINNER</b> ,this was tough tournament all the clubs performed outstanding. This is the sigh
+                of bond between the clubs ultimately in coaches and players as well.</p>
+        </article>
+
+        <figure>
+            <img src="wp4843968.jpg" width="200" height="180">
+            <figcaption>This is Legend Messi.....argentianian</figcaption>
+        </figure>
+
+    </article>
+    <svg width="200" height="200">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" />
+    </svg>
+    //geolocation api
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstjsonfile</title>
+    <script>
+        var playerobj=[{
+            "name":"siddhant negi",
+            "position":"midfielder",
+            "gender":"male",
+            "phoneno":["9786647294","8796748399"]
+        },
+    {
+          "name":"nishant negi",
+            "position":"forward",
+            "gender":"male",
+            "phoneno":["9786647294","8796748399"]
+    },
+    {
+             "name":"ravindar negi",
+            "position":"defender",
+            "gender":"male",
+            "phoneno":["9786647294","8796748399"]}
+        ]
+        for(i=0;i<playerobj.length;i++)
+        {
+            var data=playerobj[i];
+            document.write(data.name+"<br>");
+            document.write(data.position+"<br>");
+            document.write(data.gender+"<br>");
+            document.write(data.phoneno+"<br>");
+            document.write("--------------------<br>")
+
+        }
+        
+
+
+        /*document.write(playerobj[0].name+"______"+playerobj[1].position+"_____"+playerobj[2].gender);
+        document.write("  ");
+        document.write(playerobj[1].position);
+        document.write(" ");
+        document.write(playerobj[2].gender);
+        document.write(playerobj[3].phoneno);
+*/
+            </script>
+</head>
+<body>
+    
+</body>
+</html>

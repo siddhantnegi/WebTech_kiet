@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <fieldset>
+    <legend>I Love Football</legend><br><br>
+        <form action="data_input.php" target="_blank" method="post" autocomplete="on" novalidate>
+
+            <div class="flex-container">
+            <div id="fname" class="flex-container"><label type="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" required size="30" autofocus></div><br><br>
+            <div id="lname" class="flex-container"><label type="lname">Last Name :</label>
+            <input type="text" id="lname" name="lname" required size="40"><br><br></div>
+            <label type="pass">Password :</label>
+            <input type="password" id="pass" required size="50"><br><br>
+            <input type="hidden" id="cuspass" name="cuspass" value="siddhant">
+            <input type="submit" value="click here" formenctype="multipart/form-data">
+            <input type="reset">
+        </div>
+        
+            <div class="form-checkbox">
+                <div>Hover the mouse here to see the paragraph...</div>
+            <div id="favlang"><p>Choose Your Favrouite Language__</p></div>
+            
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT"> 
+            <label for="javascript">JAVASCRIPT</label><br>
+            </div><br><br>
+            
+            <div class="form-radio">
+            <div>Hover the mouse here to see the checkboxes...</div>
+            <p>Checkboxes__</p>
+
+            <input type="checkbox" id="fortuner" name="vechile1" value="FORTUNER">
+            <label for="vechile1">FORTUNER</label><br>
+            <input type="checkbox" id="xuv 700" name="vechile2" value="XUV 700">
+            <label for="vechile2">XUV 700</label><br>
+            <input type="checkbox" id="city" name="vechile3" value="CITY">      
+            <label for="vechile3">CITY</label>
+        </div>
+
+            <h3>Select Element__</h3>
+            <label for="Players">Choose a Player:</label>
+            <select size="4" multiple>
+                <option value="Messi">Messi</option>
+                <option value="Ronaldo">Ronaldo</option>
+                <option value="Neymar">Neymar</option>
+                <option value="Gavi">Gavi</option>
+                <option value="Halland">Halland</option>
+                <option value="De Bruyne">De Bruyne</option>
+                <option value="Vinícius Júnior" selected>Vinícius Júnior</option>
+            </select>
+
+            <h5><u>List top scorrer in UEFA League</U></h5>
+                <textarea message="maximum goals" rows="5" cols="55"></textarea><br><br>
+
+                <button type="button" onclick="alert('thanks!!')">BUTTON</button><br><br><br>
+
+                <input list="browser">
+                <datalist id="browser">
+                    <option value="edge"></option>
+                    <option value="crome"></option>
+                    <option value="explorer">
+                        <option value="firefox">
+                            <option value="brave">
+                                <option value="safari"></option>
+                                <option value="opera">     
+                            </option>
+                        </option>
+                    </option>
+                </datalist>
+
+                <fieldset>
+                <h2>Output Element</h2>
+                <p>it will give the result of calculation</p>
+
+                <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                    
+                        <legend>COMPUTE</legend>0
+                        <input type="range" name="a" id="a" value="30"> 100 *
+                        <input type="number" name="b" id="b" value="5"> =
+                        <output name="x" for="a b"></output>
+                        <br><br><br>
+
+                        <input type="submit" value="Result">
+                        
+                    </form>
+
+                </fieldset>
+        </form>
+        <input type="color"><br><br>
+
+        <label for="birthday">Birthday Date</label>
+        <input type="date" id="birthday" name="birthday" max="2025-01-01" min="1999-01-01"><br><br>
+
+        <input type="image" src="wp4843968.jpg" alt="myimage" width="100" height="100"><br><br><br>
+        <input type="file" id="myfile" name="myfile">
+        <input type="search" id="search" name="search"><br><br>
+        <label for="telephone number">ENTER YOUR telephone number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]" placeholder="123456789"><br><br>
+        <label for="link" >Linkdin Link:</label><br>
+        <input type="url" id="link" name="link"><br><br>
+        <label for="link" >step attribute:</label><br>
+        <input type="number" id="points" class="points" step="30"><br><br>
+    </fieldset>
+</body>
+</html>
